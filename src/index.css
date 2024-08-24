@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+  margin:0;
+}
+
+body{
+  color: #fff;
+  font-family: "Noto-sans", sans-serif;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-color: #171717; /* Neutral background color */
+  background-image: radial-gradient(
+    ellipse 80% 80% at 50% -20%, 
+    rgba(120, 119, 198, 0.3), 
+    rgba(255, 255, 255, 0)
+  );
+  background-repeat: no-repeat; /* Prevents repeating */
+  background-size: cover; /* Ensures the gradient covers the entire element */
+  background-attachment: fixed; /* Keeps the background fixed during scroll */
+}
+
+module.exports = {
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  // Other Tailwind config options...
+}
+
+.navlinks:hover {
+  color: #eeeeee;
+  text-shadow:
+    0 0 10px rgb(6, 202, 216),
+    0 0 25px rgb(14, 201, 226),
+    0 0 30px rgb(5, 206, 206),
+    0 0 55px rgb(2, 121, 151);
+}
+
+.skills{
+  box-shadow: 0px 0px 6px rgba(77, 53, 100, 0.5);
+}
+
+.skills:hover{
+  transform: scale(1.05);
+}
+
+.project-tile {
+  position: relative;
+  padding: 20px;
+  border-radius: 12px; /* Rounded corners */
+  background: linear-gradient(to right, #7c3aed, #ec4899); /* Gradient from purple-600 to pink-600 */
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24); /* Box shadow */
+  filter: blur(10px); /* Blur effect */
+  opacity: 0.25; /* Initial opacity */
+  transition: opacity 1s ease, filter 1s ease; /* Transition for opacity and blur */
+}
+
+.project-tile:hover {
+  opacity: 1; /* Full opacity on hover */
+  transition-duration: 0.2s; /* Faster transition on hover */
+}
