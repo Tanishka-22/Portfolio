@@ -52,7 +52,7 @@ const Profile = () => {
     <div className="border-b border-neutral-800 pb-4 lg:mb-35 ">
       <div className="flex justify-center flex-wrap">
         <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center align-content-center lg:items-start">
+          <div className="flex flex-col lg:w-[600px] items-center align-content-center lg:items-start">
             <motion.span
               variants={container(0)}
               initial="hidden"
@@ -95,13 +95,13 @@ const Profile = () => {
             </motion.div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
+        <div className="w-full px-[20px] lg:w-1/2 lg:p-8">
+          <div className="flex justify-center lg:mt-[30px]">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
-              width={580}
+              width={550}
               src={profilePic}
               alt="TS"
             />
@@ -113,3 +113,13 @@ const Profile = () => {
 };
 
 export default Profile;
+
+
+
+
+
+
+
+
+
+
