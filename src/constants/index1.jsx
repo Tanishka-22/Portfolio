@@ -14,12 +14,11 @@ export const NAVIGATION_LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 
-import projectImage1 from "../assets/projects/project-1.jpg";
-import projectImage2 from "../assets/projects/project-2.jpg";
-import projectImage3 from "../assets/projects/project-3.jpg";
-import projectImage4 from "../assets/projects/project-4.jpg";
-import projectImage5 from "../assets/projects/project-5.jpg";
-import projectImage6 from "../assets/projects/project-6.jpg";
+import projectImage1 from "../assets/projects/project-1.png";
+import projectImage2 from "../assets/projects/project-2.png";
+import projectImage3 from "../assets/projects/project-3.png";
+import projectImage4 from "../assets/projects/project-4.png";
+import projectImage5 from "../assets/projects/project-5.png";
 
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -41,51 +40,43 @@ refined digital experiences. By blending design creativity with technical expert
 export const PROJECTS = [
   {
     id: 1,
-    name: "Personal Portfolio",
+    name: "Language Translator",
     description:
-      "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
+      "A intuitive language translator web app built with HTML, CSS, and JavaScript, harnessing a powerful translation API to seamlessly convert text between any languages.",
     image: projectImage1,
-    githubLink: "https://github.com/user/personal-portfolio",
+    githubLink: "https://github.com/Tanishka-22/LanguageTranslator",
   },
   {
     id: 2,
-    name: "E-Commerce Platform",
+    name: "Notes Management Application",
     description:
-      "An e-commerce web application developed using Next.js and Stripe for payment integration, featuring a comprehensive product catalog, shopping cart, and checkout system.",
+      "A robust notes management app built with HTML, CSS, JavaScript, and React, leveraging Firebase for seamless real-time data storage and synchronization.",
     image: projectImage2,
-    githubLink: "https://github.com/user/ecommerce-platform",
+    githubLink: "https://github.com/Tanishka-22/Notes-Application",
   },
   {
     id: 3,
-    name: "Task Management Tool",
+    name: "Meme Generator",
     description:
-      "A task management application built with React and Redux for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
+      "A fun and interactive meme generator app built with HTML, CSS, JavaScript, and React, utilizing the Imgflip API for easy meme creation and customization.",
     image: projectImage3,
-    githubLink: "https://github.com/user/task-management-tool",
+    githubLink: "https://github.com/Tanishka-22/Meme-Generator",
   },
   {
     id: 4,
-    name: "Weather App",
+    name: "Rock-Paper-Scissor Game",
     description:
-      "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
+      "An engaging Rock-Paper-Scissors game developed with Python's Tkinter and Python Imaging Library (PIL), featuring vibrant visuals and interactive gameplay.",
     image: projectImage4,
-    githubLink: "https://github.com/user/weather-app",
+    githubLink: "https://github.com/Tanishka-22/Rock-Paper-Scissors-Game",
   },
   {
     id: 5,
-    name: "Blog Platform",
+    name: "Lead Tracker Chrome Extension",
     description:
-      "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
+      "A streamlined lead tracker built with HTML, CSS, and JavaScript, designed to save Chrome browser tabs and user inputs for efficient lead management.",
     image: projectImage5,
-    githubLink: "https://github.com/user/blog-platform",
-  },
-  {
-    id: 6,
-    name: "Chat Application",
-    description:
-      "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
-    image: projectImage6,
-    githubLink: "https://github.com/user/chat-application",
+    githubLink: "https://github.com/Tanishka-22/Lead-Tracker",
   },
 ];
 

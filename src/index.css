@@ -53,15 +53,19 @@ module.exports = {
 .project-tile {
   position: relative;
   padding: 20px;
-  border-radius: 12px; /* Rounded corners */
-  background: linear-gradient(to right, #7c3aed, #ec4899); /* Gradient from purple-600 to pink-600 */
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24); /* Box shadow */
-  filter: blur(10px); /* Blur effect */
-  opacity: 0.25; /* Initial opacity */
-  transition: opacity 1s ease, filter 1s ease; /* Transition for opacity and blur */
+  border-radius: 12px; 
+  background: linear-gradient(to right, #7c3aed, #ec4899); 
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24); 
+  filter: blur(10px); 
+  opacity: 0.25; 
+  transition: opacity 1s ease, filter 1s ease; 
 }
 
 .project-tile:hover {
-  opacity: 1; /* Full opacity on hover */
-  transition-duration: 0.2s; /* Faster transition on hover */
+  opacity: 1; 
+  transition-duration: 0.2s; 
+}
+
+.project-descript, .proj-name{
+  text-shadow: 1px 1px 2px black;
 }

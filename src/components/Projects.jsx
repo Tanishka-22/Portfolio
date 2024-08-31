@@ -35,8 +35,8 @@ const Projects = () => {
               transition={{ duration: 0.5 }}
               className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 group-hover:opacity-100"
             >
-              <h3 className="mb-12 text-xl">{project.name}</h3>
-              <p className="mb-12 p-4 text-center">{project.description}</p>
+              <h3 className="proj-name mb-12 text-xl">{project.name}</h3>
+              <p className="project-descript mb-12 p-4 text-center">{project.description}</p>
               <a
                 href={project.githubLink}
                 target="_blank"
