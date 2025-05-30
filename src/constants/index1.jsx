@@ -32,12 +32,12 @@ import { BiLogoPostgresql } from "react-icons/bi";
 
 
 export const HERO_CONTENT = `
-I am a skilled front-end developer and graphic designer, dedicated to creating 
-visually compelling and highly responsive web interfaces. I harness the power of 
-modern front-end technologies to deliver dynamic, user-friendly, and aesthetically 
-refined digital experiences. By blending design creativity with technical expertise,
- I craft solutions that are both functional and engaging, driving meaningful user 
- interaction and business success.`;
+I’m a passionate full-stack developer and creative designer with a knack for building 
+scalable, user-focused web applications. I specialize in front-end technologies like 
+React and Next.js, and back-end stacks including Node.js, Express.js, MongoDB and MySQL. 
+With a strong foundation in DSA, OOP, DBMS, and SQL, I engineer solutions that are both 
+efficient and visually engaging. Currently, I’m exploring Generative AI to push the 
+boundaries of innovation in modern web development.`;
 
 
 export const PROJECTS = [
