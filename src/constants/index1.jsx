@@ -19,6 +19,9 @@ import projectImage2 from "../assets/projects/project-2.png";
 import projectImage3 from "../assets/projects/project-3.png";
 import projectImage4 from "../assets/projects/project-4.png";
 import projectImage5 from "../assets/projects/project-5.png";
+import projectImage6 from "../assets/projects/project-6.png";
+import projectImage7 from "../assets/projects/project-7.png";
+import projectImage8 from "../assets/projects/project-8.png";
 
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -38,6 +41,30 @@ refined digital experiences. By blending design creativity with technical expert
 
 
 export const PROJECTS = [
+   {
+    id: 1,
+    name: "Employee Management System",
+    description:
+      "A employee management system for handling employee records and related operations built with React.js and Firebase.",
+    image: projectImage6,
+    githubLink: "https://github.com/Tanishka-22/EmployeeMS",
+  },
+   {
+    id: 1,
+    name: "Events Aggregator",
+    description:
+      "An event aggregator built with the MERN stack and Cheerio for web scrapping",
+    image: projectImage7,
+    githubLink: "https://github.com/Tanishka-22/Event-Ticket",
+  },
+   {
+    id: 1,
+    name: "SHEild Women Safety App",
+    description:
+      "A safety PWA built with Next.js, Firebase and Capacitor plugins.",
+    image: projectImage8,
+    githubLink: "https://github.com/Tanishka-22/SHEild",
+  },
   {
     id: 1,
     name: "Language Translator",
