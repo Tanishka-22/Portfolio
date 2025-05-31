@@ -22,6 +22,7 @@ import projectImage5 from "../assets/projects/project-5.png";
 import projectImage6 from "../assets/projects/project-6.png";
 import projectImage7 from "../assets/projects/project-7.png";
 import projectImage8 from "../assets/projects/project-8.png";
+import projectImage9 from "../assets/projects/project-9.png";
 
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -29,6 +30,7 @@ import { SiMongodb } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
+
 
 
 export const HERO_CONTENT = `
@@ -39,7 +41,6 @@ With a strong foundation in DSA, OOP, DBMS, and SQL, I engineer solutions that a
 efficient and visually engaging. Currently, I’m exploring Generative AI to push the 
 boundaries of innovation in modern web development.`;
 
-
 export const PROJECTS = [
    {
     id: 1,
@@ -48,6 +49,7 @@ export const PROJECTS = [
       "A employee management system for handling employee records and related operations built with React.js and Firebase.",
     image: projectImage6,
     githubLink: "https://github.com/Tanishka-22/EmployeeMS",
+    siteLink: "https://employee-ms-nxdf.vercel.app/",
   },
    {
     id: 1,
@@ -56,6 +58,7 @@ export const PROJECTS = [
       "An event aggregator built with the MERN stack and Cheerio for web scrapping",
     image: projectImage7,
     githubLink: "https://github.com/Tanishka-22/Event-Ticket",
+    siteLink: "https://sydney-events-ticket.vercel.app/",
   },
    {
     id: 1,
@@ -64,30 +67,16 @@ export const PROJECTS = [
       "A safety PWA built with Next.js, Firebase and Capacitor plugins.",
     image: projectImage8,
     githubLink: "https://github.com/Tanishka-22/SHEild",
+    siteLink: "https://sheild.vercel.app/",
   },
   {
     id: 1,
-    name: "Language Translator",
+    name: "Form Builder",
     description:
-      "A intuitive language translator web app built with HTML, CSS, and JavaScript, harnessing a powerful translation API to seamlessly convert text between any languages.",
-    image: projectImage1,
-    githubLink: "https://github.com/Tanishka-22/LanguageTranslator",
-  },
-  {
-    id: 2,
-    name: "Notes Management Application",
-    description:
-      "A robust notes management app built with HTML, CSS, JavaScript, and React, leveraging Firebase for seamless real-time data storage and synchronization.",
-    image: projectImage2,
-    githubLink: "https://github.com/Tanishka-22/Notes-Application",
-  },
-  {
-    id: 3,
-    name: "Meme Generator",
-    description:
-      "A fun and interactive meme generator app built with HTML, CSS, JavaScript, and React, utilizing the Imgflip API for easy meme creation and customization.",
-    image: projectImage3,
-    githubLink: "https://github.com/Tanishka-22/Meme-Generator",
+      "A dynamic multi-step form builder built with React Remix, Zustand, Typescript and Tailwind CSS, featuring drag-and-drop field creation, real-time preview, field configuration, and shareable form links",
+    image: projectImage9,
+    githubLink: "https://github.com/Tanishka-22/form-builder",
+    siteLink: "https://form-builder-seven-fawn.vercel.app/",
   },
   {
     id: 4,
@@ -96,6 +85,34 @@ export const PROJECTS = [
       "An engaging Rock-Paper-Scissors game developed with Python's Tkinter and Python Imaging Library (PIL), featuring vibrant visuals and interactive gameplay.",
     image: projectImage4,
     githubLink: "https://github.com/Tanishka-22/Rock-Paper-Scissors-Game",
+    siteLink: "https://sheild.vercel.app/",
+  },
+  {
+    id: 1,
+    name: "Language Translator",
+    description:
+      "A intuitive language translator web app built with HTML, CSS, and JavaScript, harnessing a powerful translation API to seamlessly convert text between any languages.",
+    image: projectImage1,
+    githubLink: "https://github.com/Tanishka-22/LanguageTranslator",
+    siteLink: "https://lang-converter-translator.netlify.app/",
+  },
+  {
+    id: 2,
+    name: "Notes Management Application",
+    description:
+      "A robust notes management app built with HTML, CSS, JavaScript, and React, leveraging Firebase for seamless real-time data storage and synchronization.",
+    image: projectImage2,
+    githubLink: "https://github.com/Tanishka-22/Notes-Application",
+    siteLink: "https://notes-application-theta.vercel.app/",
+  },
+  {
+    id: 3,
+    name: "Meme Generator",
+    description:
+      "A fun and interactive meme generator app built with HTML, CSS, JavaScript, and React, utilizing the Imgflip API for easy meme creation and customization.",
+    image: projectImage3,
+    githubLink: "https://github.com/Tanishka-22/Meme-Generator",
+    siteLink: "https://meme-generator-self-iota.vercel.app/",
   },
   {
     id: 5,
@@ -104,6 +121,7 @@ export const PROJECTS = [
       "A streamlined lead tracker built with HTML, CSS, and JavaScript, designed to save Chrome browser tabs and user inputs for efficient lead management.",
     image: projectImage5,
     githubLink: "https://github.com/Tanishka-22/Lead-Tracker",
+    siteLink: "https://lead-tracker-chromeextension.netlify.app/",
   },
 ];
 

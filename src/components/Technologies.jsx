@@ -3,6 +3,7 @@ import { RiCss3Fill, RiGithubLine, RiHtml5Line, RiReactjsLine, RiTailwindCssLine
 import cLogo from "../assets/c.png" 
 import {motion} from "framer-motion";
 import { FaPython } from "react-icons/fa6";
+import { SiMongodb, SiExpress, SiNodedotjs, SiMysql, SiTypescript, SiPostman } from "react-icons/si"
 
 const iconVariants = (duration) => ({
     initial: { y: -10 },
@@ -26,46 +27,7 @@ const iconVariants = (duration) => ({
             transition={{ duration: 0.8 }}
             className="my-20 text-center text-4xl">Skills</motion.h1>
         <div className="flex flex-wrap items-center justify-center gap-4">
-          <motion.div
-            variants={iconVariants(2.5)}
-            initial="initial"
-            animate="animate"
-          >
-            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
-              <img src={cLogo} width={72} alt="C Logo" />
-            </div>
-          </motion.div>
-          
-          <motion.div
-            variants={iconVariants(3)}
-            initial="initial"
-            animate="animate"
-          >
-            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
-              <RiHtml5Line className="text-7xl text-orange-700" />
-            </div>
-          </motion.div>
-  
-          <motion.div
-            variants={iconVariants(5)}
-            initial="initial"
-            animate="animate"
-          >
-            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
-              <RiCss3Fill className="text-7xl text-blue-800" />
-            </div>
-          </motion.div>
-  
-          <motion.div
-            variants={iconVariants(2)}
-            initial="initial"
-            animate="animate"
-          >
-            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
-              <RiTailwindCssLine className="text-7xl text-cyan-400" />
-            </div>
-          </motion.div>
-  
+          {/* Javascript */}
           <motion.div
             variants={iconVariants(6)}
             initial="initial"
@@ -75,7 +37,27 @@ const iconVariants = (duration) => ({
               <DiJavascript1 className="text-7xl text-yellow-500" />
             </div>
           </motion.div>
-  
+          {/* MongoDB */}
+          <motion.div
+            variants={iconVariants(4)}
+            initial="initial"
+            animate="animate"
+          >
+            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
+              <SiMongodb className="text-7xl text-green-600" />
+            </div>
+          </motion.div>
+          {/* ExpressJS */}
+          <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+          >
+            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
+              <SiExpress className="text-7xl text-gray-700" />
+            </div>
+          </motion.div>
+          {/* ReactJS */}
           <motion.div
             variants={iconVariants(4)}
             initial="initial"
@@ -85,7 +67,17 @@ const iconVariants = (duration) => ({
               <RiReactjsLine className="text-7xl text-cyan-400" />
             </div>
           </motion.div>
-  
+          {/* NodeJS */}
+          <motion.div
+            variants={iconVariants(5)}
+            initial="initial"
+            animate="animate"
+          >
+            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
+              <SiNodedotjs className="text-7xl text-green-700" />
+            </div>
+          </motion.div>
+          {/* Github */}
           <motion.div
             variants={iconVariants(3)}
             initial="initial"
@@ -95,7 +87,43 @@ const iconVariants = (duration) => ({
               <RiGithubLine className="text-7xl" />
             </div>
           </motion.div>
-
+          {/* The rest */}
+          <motion.div
+            variants={iconVariants(2.5)}
+            initial="initial"
+            animate="animate"
+          >
+            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
+              <img src={cLogo} width={72} alt="C Logo" />
+            </div>
+          </motion.div>
+          <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+          >
+            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
+              <RiHtml5Line className="text-7xl text-orange-700" />
+            </div>
+          </motion.div>
+          <motion.div
+            variants={iconVariants(5)}
+            initial="initial"
+            animate="animate"
+          >
+            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
+              <RiCss3Fill className="text-7xl text-blue-800" />
+            </div>
+          </motion.div>
+          <motion.div
+            variants={iconVariants(2)}
+            initial="initial"
+            animate="animate"
+          >
+            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
+              <RiTailwindCssLine className="text-7xl text-cyan-400" />
+            </div>
+          </motion.div>
           <motion.div
             variants={iconVariants(5)}
             initial="initial"
@@ -103,6 +131,33 @@ const iconVariants = (duration) => ({
           >
             <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
               <FaPython className="text-7xl text-blue-800" />
+            </div>
+          </motion.div>
+          <motion.div
+            variants={iconVariants(2)}
+            initial="initial"
+            animate="animate"
+          >
+            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
+              <SiMysql className="text-7xl text-blue-500" />
+            </div>
+          </motion.div>
+          <motion.div
+            variants={iconVariants(4)}
+            initial="initial"
+            animate="animate"
+          >
+            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
+              <SiTypescript className="text-7xl text-blue-700" />
+            </div>
+          </motion.div>
+          <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+          >
+            <div className="skills rounded-2xl border-2 border-neutral-800 p-4">
+              <SiPostman className="text-7xl text-orange-500" />
             </div>
           </motion.div>
         </div>
