@@ -37,6 +37,18 @@ const Projects = () => {
             >
               <h3 className="proj-name mb-12 text-xl">{project.name}</h3>
               <p className="project-descript mb-12 p-4 text-center">{project.description}</p>
+              <div className="flex flex-wrap justify-center gap-4 mb-8">
+              <a
+                href={project.siteLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300"
+              >
+                <div className="flex items-center">
+                  <span>View Site</span>
+                  <MdArrowOutward />
+                </div>
+              </a>
               <a
                 href={project.githubLink}
                 target="_blank"
@@ -44,10 +56,11 @@ const Projects = () => {
                 className="rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300"
               >
                 <div className="flex items-center">
-                  <span>View on GitHub</span>
+                  <span>GitHub Repo</span>
                   <MdArrowOutward />
                 </div>
               </a>
+              </div>
             </motion.div>
           </motion.div>
         ))}
