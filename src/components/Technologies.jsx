@@ -20,7 +20,7 @@ const iconVariants = (duration) => ({
   
   const Technologies = () => {
     return (
-      <div className="border-b border-neutral-800 align-content-center pb-24 lg:pb-30">
+      <section id="skills" className="border-b border-neutral-800 align-content-center pb-24 lg:pb-30">
         <motion.h1 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -161,7 +161,7 @@ const iconVariants = (duration) => ({
             </div>
           </motion.div>
         </div>
-      </div>
+      </section>
     );
   };
   

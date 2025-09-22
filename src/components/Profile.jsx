@@ -3,7 +3,7 @@ import profilePic from "../assets/tanishka.png";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 import { SOCIAL_MEDIA_LINKS_PROFILE } from "../constants/index1";
-import { motion } from "framer-motion"; // Assuming you're using framer-motion
+import { motion } from "framer-motion";
 
 const Profile = () => {
   const typedRef = useRef(null);
@@ -13,6 +13,8 @@ const Profile = () => {
       strings: [
         "Welcome to my profile",
         "I'm Tanishka Shivhare",
+        "A Full-Stack Developer",
+        "A Software Engineer",
         "A Web Developer",
         "A Graphic Designer",
       ],

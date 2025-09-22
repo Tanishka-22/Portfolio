@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 const Education = () => {
   return (
-    <section className="py-8 pt-20 border-b border-neutral-800 pb-16 lg:mb-35">
+    <section id="education" className="py-8 pt-20 border-b border-neutral-800 pb-16 lg:mb-35">
         <h2 className="mb-8 text-center text-3xl font-bold lg:text-4xl">Education</h2> 
         {EDUCATION.map((edu, index) => (
             <motion.div

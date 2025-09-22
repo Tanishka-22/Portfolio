@@ -11,6 +11,7 @@ export const NAVIGATION_LINKS = [
   // { label: "Bio", href: "#bio" },
   // { label: "Work Experience", href: "#work" },
   { label: "Education", href: "#education" },
+  { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -34,12 +35,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 
 
 export const HERO_CONTENT = `
-I’m a passionate full-stack developer and creative designer with a knack for building 
-scalable, user-focused web applications. I specialize in front-end technologies like 
-React and Next.js, and back-end stacks including Node.js, Express.js, MongoDB and MySQL. 
-With a strong foundation in DSA, OOP, DBMS, and SQL, I engineer solutions that are both 
-efficient and visually engaging. Currently, I’m exploring Generative AI to push the 
-boundaries of innovation in modern web development.`;
+I’m a passionate Full-Stack Developer and aspiring Software Engineer dedicated to building scalable, user-focused applications. On the front end, I specialize in React and Next.js, while my back-end expertise includes Node.js, Express.js, MongoDB, and MySQL. With a strong foundation in DSA, OOP, DBMS, and SQL, I engineer solutions that are not only efficient but also intuitive and visually engaging. Currently, I’m expanding my skill set by exploring Generative AI, aiming to merge creativity with cutting-edge technology to drive innovation in modern software development.`;
 
 export const PROJECTS = [
    {
@@ -164,29 +160,6 @@ export const SKILLS = [
   },
 ];
 
-export const EXPERIENCES = [
-  {
-    title: "Lead Frontend Developer",
-    company: "Innovative Tech Solutions",
-    duration: "July 2020 - Present",
-    description:
-      "As the Lead Frontend Developer, I spearheaded the development of advanced web applications using cutting-edge technologies like React, Redux, and TypeScript. I worked closely with cross-functional teams, including designers, product managers, and backend developers, to deliver seamless and high-performance user experiences.",
-  },
-  {
-    title: "Frontend Engineer",
-    company: "Digital Creations",
-    duration: "February 2016 - June 2020",
-    description:
-      "At Digital Creations, I focused on building highly interactive and responsive web interfaces using HTML, CSS, JavaScript, and modern libraries like React. I collaborated closely with UX/UI designers to implement design changes that enhanced user engagement and satisfaction. My role involved optimizing website performance, ensuring cross-browser compatibility, and implementing SEO best practices. ",
-  },
-  {
-    title: "Junior Web Developer",
-    company: "Bright Future Technologies",
-    duration: "August 2014 - January 2016",
-    description:
-      "In my role as a Junior Web Developer, I assisted in the development and maintenance of various web applications. I gained hands-on experience in utilizing HTML, CSS, and JavaScript to create user-friendly interfaces. I actively participated in team meetings, contributed to project planning, and collaborated with senior developers to implement new features.",
-  },
-];
 
 export const EDUCATION = [
   {
@@ -194,9 +167,30 @@ export const EDUCATION = [
     institute: "Jabalpur Engineering College",
     duration: "September 2022 - present",
     description:
-      "Specialized in Human-Computer Interaction and Software Engineering. Participated in various projects involving frontend development, algorithms, and data structures. Gained valuable insights into computer fundamentals such as OOPs etc.",
+      "Specialized in Human-Computer Interaction and Software Engineering. Participated in various projects involving frontend development, algorithms, and data structures. Gained valuable insights into computer fundamentals such as Object Oriented Programming, DBMS, Computer Networks etc.",
   },
 ];
+
+
+export const EXPERIENCE = [
+  {
+    title: "Digital Transformation Intern",
+    company: "HTL Aircon Pvt. Ltd.",
+    duration: "June 2025 - July 2025",
+    location: "Mumbai, Maharashtra",
+    description:
+      "Assisted in automating workflows across 5+ departments, reducing manual tasks by 35% and boosting operational efficiency. Gathered CRM unit requirements, mapped 10,000+ records, and contributed to enhancing system architecture based on user feedback, improving usability by 25%. Conducted integration testing, assisted in UAT, created training materials, and onboarded 50+ employees, resulting in a 40% increase in user adoption.",
+  },
+  {
+    title: "Web Developer Intern",
+    company: "Tigmo Development Pvt. Ltd.",
+    duration: "March 2025",
+    location: "Remote",
+    description:
+      "Developed and optimized React.js components, improving app performance by 20%. Integrated RESTful APIs, streamlining data workflows, reducing load times by 15%. Debugged, tested and contributed to delivering client-facing solutions on schedule.",
+  },
+];
+
 
 export const SOCIAL_MEDIA_LINKS = [
   {
