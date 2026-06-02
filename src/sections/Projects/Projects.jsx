@@ -14,7 +14,7 @@ const Projects = () => {
       >
         Projects
       </motion.h2>
-      <div className="flex flex-wrap justify-center w-full max-w-7xl mx-auto gap-9 pt-8 px-4 md:px-8 lg:px-4">
+      <div className="flex flex-wrap justify-center w-full max-w-5xl mx-auto gap-9 pt-8 px-12 md:px-16 lg:px-8">
         {PROJECTS.map((project) => (
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
