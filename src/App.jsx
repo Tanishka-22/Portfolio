@@ -1,11 +1,6 @@
-import Navbar from "./components/Navbar";
-import Profile from "./components/Profile";
-import Technologies from "./components/Technologies";
-import Projects from "./components/Projects";
-import Education from "./components/Education";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import { Experience } from "./components/Experience";
+import { Navbar, Footer } from "./components/layout";
+import { Hero, Technologies, Projects, Education, Experience, Contact } from "./sections";
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
@@ -15,7 +10,7 @@ const App = () => {
         
         <div className="relative z-10 flex flex-col items-center p-4 space-y-8 container mx-auto">
           <Navbar />
-          <Profile />
+          <Hero />
           <Technologies/>
           <Projects />
           <Education />
@@ -24,25 +19,9 @@ const App = () => {
           <Footer />
         </div>
         </div> 
+        <Analytics />
     </div>
   );
 };
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

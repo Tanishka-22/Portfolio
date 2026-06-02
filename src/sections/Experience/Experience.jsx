@@ -1,6 +1,5 @@
-import React from 'react'
-import { EXPERIENCE } from '../constants/index1'
-import { motion } from 'framer-motion'
+import { EXPERIENCE } from "../../data/experience"
+import { motion } from "framer-motion"
 
 export const Experience = () => {
   return (

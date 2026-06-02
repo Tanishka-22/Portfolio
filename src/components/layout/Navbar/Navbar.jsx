@@ -1,9 +1,8 @@
-
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
-import { NAVIGATION_LINKS } from "../constants/index1";
-import logo from "../assets/logo.png"
+import { NAVIGATION_LINKS } from "../../../data/navigation";
+import logo from "../../../assets/images/logos/site-logo.png"
 
 const Navbar = () => {
     const [isMobileMenuOpen,setIsMobileMenuOpen] = useState(false);
@@ -49,9 +48,6 @@ const Navbar = () => {
                             ))}
                         </ul>
                     </div>
-                    {/* <div>
-                    <Switch checked={darkMode} onChange={toggleSwitchFunction} />
-         ...        </div> */}
                 </div>
             </div>
             {/* MobileMenu */}
@@ -81,4 +77,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

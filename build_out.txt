@@ -1,0 +1,47 @@
+﻿[36mvite v5.4.1 [32mbuilding for production...[36m[39m
+transforming...
+node.exe : Browserslist: 
+caniuse-lite is outdated. Please 
+run:
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~
+    + CategoryInfo          : NotS 
+   pecified: (Browserslist: c...e  
+  d. Please run::String) [], Rem   
+ oteException
+    + FullyQualifiedErrorId : Nati 
+   veCommandError
+ 
+  npx update-browserslist-db@latest
+  Why you should do it regularly: h
+ttps://github.com/browserslist/upda
+te-db#readme
+[32mΓ£ô[39m 49 modules transformed.
+[31mx[39m Build failed in 1.16s
+[31merror during build:
+[31mCould not resolve 
+"../../data/navigation" from "src/c
+omponents/layout/Navbar/Navbar.jsx"
+[31m
+file: [36mC:/deploys/Portfolio/src
+/components/layout/Navbar/Navbar.js
+x[31m
+    at getRollupError (file:///C:/d
+eploys/Portfolio/node_modules/rollu
+p/dist/es/shared/parseAst.js:392:41
+)
+    at error (file:///C:/deploys/Po
+rtfolio/node_modules/rollup/dist/es
+/shared/parseAst.js:388:42)
+    at ModuleLoader.handleInvalidRe
+solvedId (file:///C:/deploys/Portfo
+lio/node_modules/rollup/dist/es/sha
+red/node-entry.js:19213:24)
+    at file:///C:/deploys/Portfolio
+/node_modules/rollup/dist/es/shared
+/node-entry.js:19173:26[39m

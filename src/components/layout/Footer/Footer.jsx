@@ -1,5 +1,5 @@
-import logo from "../assets/logo.png"
-import { SOCIAL_MEDIA_LINKS } from "../constants/index1"
+import logo from "../../../assets/images/logos/site-logo.png"
+import { SOCIAL_MEDIA_LINKS } from "../../../data/social-links"
 import { motion } from "framer-motion"
 
 const Footer = () => {

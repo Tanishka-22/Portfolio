@@ -1,4 +1,5 @@
-import emailjs from "@emailjs/browser";
+import { sendEmail } from "../../lib/emailjs";
+import { Button } from "../../components/ui";
 import { useState } from "react";
 import { FiSend } from "react-icons/fi";
 import { Toaster, toast } from 'react-hot-toast';
@@ -43,13 +44,7 @@ const Contact = () => {
       setErrors({});
       setIsSending(true);
 
-      emailjs
-        .send(
-          "service_h2ezdke",
-          "template_ho8vmvg",
-          formData,
-          "GIYW9S99-fqnOA9q-"
-        )
+      sendEmail(formData)
         .then(() => {
           toast.success("Message sent successfully");
           setFormData({ name: "", email: "", message: "" });
@@ -137,18 +132,15 @@ const Contact = () => {
             </motion.p>
           )}
         </div>
-        <button
+        <Button
           type="submit"
-          className={`mb-8 w-full rounded border border-stone-50/30 bg-stone-200 px-4 py-2 text-sm font-semibold text-stone-900 hover:bg-stone-300 ${
-            isSending ? "cursor-not-allowed opacity-50" : ""
-          }`}
+          className="mb-8 w-full"
           disabled={isSending}
+          variant="primary"
         >
-          <div className="flex items-center justify-center gap-2">
-            {isSending ? "Sending..." : "Send"}
-            <FiSend />
-          </div>
-        </button>
+          {isSending ? "Sending..." : "Send"}
+          <FiSend />
+        </Button>
       </motion.form>
     </div>
   );

@@ -1,0 +1,2 @@
+export const HERO_CONTENT = `
+I design and develop scalable web applications that combine clean engineering with exceptional user experiences. From crafting responsive frontends with to building robust backend systems and databases, I enjoy creating products that are both technically sound and impactful. Currently, I’m exploring Generative AI and intelligent systems to build the next generation of software solutions.`;

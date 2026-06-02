@@ -1,22 +1,23 @@
-import { HERO_CONTENT } from "../constants/index1";
-import profilePic from "../assets/tanishka.png";
+import { HERO_CONTENT } from "../../data/hero";
+import profilePic from "../../assets/images/profile/tanishka.png";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
-import { SOCIAL_MEDIA_LINKS_PROFILE } from "../constants/index1";
+import { SOCIAL_MEDIA_LINKS_PROFILE } from "../../data/social-links";
 import { motion } from "framer-motion";
 
-const Profile = () => {
+const Hero = () => {
   const typedRef = useRef(null);
 
   useEffect(() => {
     const options = {
       strings: [
-        "Welcome to my profile",
         "I'm Tanishka Shivhare",
-        "A Full-Stack Developer",
         "A Software Engineer",
-        "A Web Developer",
-        "A Graphic Designer",
+        "A Full-Stack Developer",
+        "An AI Enthusiast",
+        "A Problem Solver",
+        "Building Scalable Solutions",
+        "A Graphic Designer"
       ],
       typeSpeed: 50,
       backSpeed: 50,
@@ -42,7 +43,7 @@ const Profile = () => {
   });
 
   const typedText = (delay) => ({
-    hidden: { x:0, opacity: 0 },
+    hidden: { x: 0, opacity: 0 },
     visible: {
       x: 0,
       opacity: 1,
@@ -114,14 +115,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
-
-
-
-
-
-
-
-
-
-
+export default Hero;

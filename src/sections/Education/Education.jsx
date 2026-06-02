@@ -1,4 +1,4 @@
-import { EDUCATION } from "../constants/index1"
+import { EDUCATION } from "../../data/education"
 import { motion } from "framer-motion"
 
 const Education = () => {
