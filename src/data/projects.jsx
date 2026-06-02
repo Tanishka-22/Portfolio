@@ -1,5 +1,5 @@
 import projectImage1 from "../assets/images/projects/project-1.png";
-import projectImage2 from "../assets/images/projects/project-2.png";
+//import projectImage2 from "../assets/images/projects/project-2.png";
 // import projectImage3 from "../assets/images/projects/project-3.png";
 import projectImage4 from "../assets/images/projects/project-4.png";
 import projectImage5 from "../assets/images/projects/project-5.png";
@@ -83,15 +83,15 @@ export const PROJECTS = [
     githubLink: "https://github.com/Tanishka-22/LanguageTranslator",
     siteLink: "https://lang-converter-translator.netlify.app/",
   },
-  {
-    id: 9,
-    name: "NoteSphere",
-    description:
-      "A robust notes management app built with HTML, CSS, JavaScript, and React, leveraging Firebase for seamless real-time data storage and synchronization.",
-    image: projectImage2,
-    githubLink: "https://github.com/Tanishka-22/Notes-Application",
-    siteLink: "https://notes-application-theta.vercel.app/",
-  },
+  // {
+  //   id: 9,
+  //   name: "NoteSphere",
+  //   description:
+  //     "A robust notes management app built with HTML, CSS, JavaScript, and React, leveraging Firebase for seamless real-time data storage and synchronization.",
+  //   image: projectImage2,
+  //   githubLink: "https://github.com/Tanishka-22/Notes-Application",
+  //   siteLink: "https://notes-application-theta.vercel.app/",
+  // },
   // {
   //   id: 10,
   //   name: "Meme Generator",

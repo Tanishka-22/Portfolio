@@ -55,7 +55,7 @@ const Hero = () => {
     <div className="border-b border-neutral-800 pb-4 lg:mb-35 ">
       <div className="flex justify-center flex-wrap">
         <div className="w-full lg:w-1/2">
-          <div className="flex flex-col lg:w-[600px] items-center align-content-center lg:items-start">
+          <div className="flex flex-col lg:w-[600px] items-center justify-center lg:items-start">
             <motion.span
               variants={container(0)}
               initial="hidden"
@@ -69,13 +69,13 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               ref={typedRef}
-              className="lg:text-bold bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text py-6 text-6xl lg:text-7xl text-transparent font-thin tracking-tight"
+              className="lg:font-bold bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text py-6 text-6xl lg:text-7xl text-transparent font-thin tracking-tight"
             ></motion.span>
             <motion.p
               variants={container(0.2)}
               initial="hidden"
               animate="visible"
-              className="max-w-xl lg:text-small pb-6 font-light tracking-lighter"
+              className="max-w-xl lg:text-lg pb-6 font-light tracking-tight text-center lg:text-left"
             >
               {HERO_CONTENT}
             </motion.p>

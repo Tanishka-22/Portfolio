@@ -60,7 +60,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="p-4 lg:w-3/4" id="contact">
+    <div className="w-full max-w-4xl px-4 py-8 lg:py-16 mx-auto" id="contact">
       <Toaster />
       <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">
         Let's Connect
@@ -71,8 +71,8 @@ const Contact = () => {
         transition={{ duration: 0.8, delay: 0.3 }}
         onSubmit={handleSubmit}
       >
-        <div className="mb-4 flex space-x-4">
-          <div className="lg:w-1/2">
+        <div className="mb-4 flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
+          <div className="w-full lg:w-1/2">
             <input
               type="text"
               id="name"
@@ -80,19 +80,19 @@ const Contact = () => {
               value={formData.name}
               placeholder="Name"
               onChange={handleChange}
-              className="mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
+              className="w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
             />
             {errors.name && (
               <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                className="text-sm text-rose-800"
+                className="mt-1 text-sm text-rose-500"
               >
                 {errors.name}
               </motion.p>
             )}
           </div>
-          <div className="lg:w-1/2">
+          <div className="w-full lg:w-1/2">
             <input
               type="email"
               id="email"
@@ -100,33 +100,34 @@ const Contact = () => {
               value={formData.email}
               placeholder="Email"
               onChange={handleChange}
-              className="mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
+              className="w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
             />
             {errors.email && (
               <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                className="text-sm text-rose-800"
+                className="mt-1 text-sm text-rose-500"
               >
                 {errors.email}
               </motion.p>
             )}
           </div>
         </div>
-        <div className="mb-4">
+        <div className="mb-8 mt-4 lg:mt-8">
           <textarea
             id="message"
             name="message"
             value={formData.message}
             placeholder="Message"
+            rows="5"
             onChange={handleChange}
-            className="mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
+            className="w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none resize-none"
           />
           {errors.message && (
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              className="text-sm text-rose-800"
+              className="mt-1 text-sm text-rose-500"
             >
               {errors.message}
             </motion.p>

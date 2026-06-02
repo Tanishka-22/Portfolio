@@ -52,23 +52,22 @@ const Navbar = () => {
             </div>
             {/* MobileMenu */}
 
-            <div className="flex rounded-lg backdrop-blur-md lg:hidden">
-                <div className="flex items-center justify-between">
-                    <a href="#">
-                        <img src= {logo}  width={37} alt="logo" className="m-2"/>
-                    </a>
-                </div>
-                <div className="flex ms-auto items-center">
-                    <button className="focus:outline-none lg:hidden" 
-                        onClick={toggleMobileMenu}>
-                            {isMobileMenuOpen ? (<FaTimes className="m-2 h-6 w-5" />) : (<FaBars className="m-2 h-6 w-5" />) }
-                    </button>
-                </div>
+            <div className="flex w-full items-center justify-between rounded-lg backdrop-blur-md lg:hidden bg-black/40 px-4 py-2 border border-stone-50/10">
+                <a href="#">
+                    <img src={logo} width={37} alt="logo" className="m-2"/>
+                </a>
+                <button className="focus:outline-none lg:hidden text-white" onClick={toggleMobileMenu}>
+                    {isMobileMenuOpen ? (<FaTimes className="m-2 h-6 w-5" />) : (<FaBars className="m-2 h-6 w-5" />)}
+                </button>
             </div>
             {isMobileMenuOpen && (
-                <ul className="ml-4 mt-4 flex flex-col gap-6 backdrop-blur-md">
+                <ul className="mt-4 flex flex-col gap-4 backdrop-blur-md bg-black/80 rounded-xl p-6 border border-stone-50/10 shadow-lg mx-4">
                     {NAVIGATION_LINKS.map((item,index) => (
-                        <li key={index}><a href={item.href} className="block w-full text-lg" onClick={(e) => handleLinkClick(e, item.href)}>{item.label}</a></li>
+                        <li key={index}>
+                            <a href={item.href} className="block w-full text-lg text-neutral-300 hover:text-white hover:pl-2 transition-all duration-300" onClick={(e) => handleLinkClick(e, item.href)}>
+                                {item.label}
+                            </a>
+                        </li>
                     ))}
                 </ul>
             )}

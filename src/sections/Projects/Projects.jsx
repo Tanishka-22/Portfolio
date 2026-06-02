@@ -5,16 +5,16 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <section className="pt-20 border-b border-neutral-800 pb-16 lg:mb-35" id="projects">
+    <section className="w-full pt-20 border-b border-neutral-800 pb-16 lg:mb-35" id="projects">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="mb-8 text-center text-3xl lg:text-4xl"
+        className="mb-8 text-center text-3xl font-bold lg:text-4xl"
       >
         Projects
       </motion.h2>
-      <div className="grid grid-cols-1 gap-9 pt-8 mx-16 md:grid-cols-2 lg:grid-cols-3">
+      <div className="flex flex-wrap justify-center w-full max-w-7xl mx-auto gap-9 pt-8 px-4 md:px-8 lg:px-4">
         {PROJECTS.map((project) => (
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -22,7 +22,7 @@ const Projects = () => {
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1.02 }}
             key={project.id}
-            className="group relative aspect-[4/5] overflow-hidden rounded-3xl bg-neutral-900 shadow-xl"
+            className="group relative w-full md:w-[calc(50%-1.125rem)] lg:w-[calc(33.333%-1.5rem)] aspect-[4/5] overflow-hidden rounded-3xl bg-neutral-900 shadow-xl"
           >
             <motion.img
               src={project.image}
